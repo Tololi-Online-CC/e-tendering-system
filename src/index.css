@@ -1,3 +1,9 @@
+:root {
+  --yellow: #ffc90a;
+  --black: black;
+  --white: white;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,201 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.site-header {
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header span {
+  padding: 0 20px;
+  font-size: 16px;
+  color: var(--white);
+}
+.site-header img {
+  width: 60px;
+  height: auto;
+  padding: 5px 20px;
+}
+.site-header span:hover {
+  padding: 0 20px;
+  color: var(--yellow);
+  opacity: 1;
+}
+.link span {
+  padding: 0 20px;
+  font-size: 16px;
+  color: var(--black);
+  display: inline-block;
+  margin: 40px 60px 0px;
+}
+.link span:hover {
+  padding: 0 20px;
+  color: var(--yellow);
+  opacity: 1;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: var(--yellow);}
+.second-head {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+.second-head span {
+  padding: 0 50px;
+  font-size: 14px;
+  color: var(--white);
+}
+.second-head span:hover {
+  color: var(--yellow);
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 40%;
+  height: auto;
+  margin: 50px auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form .input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form .input-large {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: var(--black);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: var(--yellow) ;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: var(--yellow) ;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.bid-request-card {
+  background: #f1f1f1;
+  margin: 20px auto;
+  padding: 1px 20px 20px 90px;
+  position: relative;
+  width: 80%;
+}
+.bid-request-card h2{
+  margin-bottom: 0;
+}
+.bid-request-card small {
+  margin: 5px 0;
+  color: #777;
+}
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.grid-tool-bar {
+  float:right;
+  color: black;
+}
+.proposal_button {
+  background-color: var(--black);
+  height: 50px;
+  width: 150px;
+  color: var(--white);
+  align-self: center;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 45vw;
+}
+.proposal_button:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+  border: none;
 }
