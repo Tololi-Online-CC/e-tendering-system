@@ -8,7 +8,7 @@ export default function Loginpage() {
     event.preventDefault();
 
     // 👇️ redirect to /contacts
-    navigate('/operator');
+    navigate('/contractor/dashboard');
   };
   
   return (

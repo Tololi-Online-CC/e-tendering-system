@@ -11,13 +11,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f7fb;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 .site-header {
   width: 100%;
   background-color: #111;
@@ -41,14 +41,15 @@ code {
   color: var(--yellow);
   opacity: 1;
 }
-.link span {
+.link {
   padding: 0 20px;
   font-size: 16px;
   color: var(--black);
   display: inline-block;
   margin: 40px 60px 0px;
+  cursor: pointer;
 }
-.link span:hover {
+.link:hover {
   padding: 0 20px;
   color: var(--yellow);
   opacity: 1;
@@ -65,7 +66,7 @@ code {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   z-index: 1;
 }
 
@@ -92,8 +93,9 @@ code {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  background-color: black;
+  color: var(--white);
+  background-color: var(--black);
+  overflow: hidden;
 }
 .second-head span {
   padding: 0 50px;
@@ -174,11 +176,12 @@ code {
   display: none;
 }
 .bid-request-card {
-  background: #f1f1f1;
+  background: #fff;
   margin: 20px auto;
   padding: 1px 20px 20px 90px;
   position: relative;
   width: 80%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .bid-request-card h2{
   margin-bottom: 0;
@@ -193,7 +196,7 @@ code {
   font-size: 0.9em;
   font-family: sans-serif;
   min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .grid-tool-bar {
   float:right;
@@ -213,4 +216,88 @@ code {
   background-color: var(--yellow);
   color: var(--white);
   border: none;
+}
+.dashboard {
+  margin: 0 50px;
+}
+.analytics {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.analytics .card {
+  width: 85%;
+  height: 120px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+}
+.analytics .card h2 {
+  font-size: 40px;
+  margin: 0;
+}
+.all-bids-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.all-bids-header .link {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+.all-bids-header span {
+  padding-left: 20px;
+  font-size: 16px;
+  color: var(--black);
+  display: inline;
+}
+.all-bids-header span:hover {
+  color: var(--yellow);
+  opacity: 1;
+}
+.dashboard-bid-card {
+  display: grid;
+  /* id name company description duedate */
+  grid-template-columns: 5% 20% 20% 30% 15% 10%; 
+  height: 50px;
+  padding: 0 20px;
+  margin-top: 10px;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+}
+.dashboard-bid-card span:nth-child(even){
+  color: gray;
+}
+.announcements-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 10px 20px;
+  margin-top: 10px;
+  /* align-items: center; */
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+  
+}
+.announcements-card h3 {
+  margin: 0;
+}
+.yellow-hover {
+  color: var(--black);
+  text-decoration: underline;
+}
+.yellow-hover:hover {
+  color: var(--yellow);
 }

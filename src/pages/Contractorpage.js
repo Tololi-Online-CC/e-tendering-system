@@ -1,7 +1,8 @@
 import React from 'react'
+import Secondhead from '../components/Secondhead'
 
-export default function Contractorpage() {
+export default function Operatorpage() {
   return (
-    <div>Contractorpage</div>
+    <Secondhead />
   )
 }
