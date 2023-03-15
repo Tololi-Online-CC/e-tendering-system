@@ -12,6 +12,7 @@ import Category from "./pages/dynamic-pages/Category";
 import Bid from "./pages/dynamic-pages/Bid";
 import Review from "./pages/dynamic-pages/Review";
 import BidDetail from "./pages/contractor-pages/BidDetail";
+import Registrationpage from "./pages/Registrationpage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Siteheader />
         <Routes>
           <Route exact path ="/" element={<Loginpage />} />
+          <Route path ="register" element={<Registrationpage />} />
           <Route path="/contractor" element={<Contractorpage />} />
           <Route path="/contractor/dashboard" element={<Dashboard />} />
           <Route path="/contractor/bids_list" element={<BidsList />}/>

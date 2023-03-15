@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Loginpage() {
   const navigate = useNavigate();
@@ -7,7 +7,6 @@ export default function Loginpage() {
   const handleSubmit = event => {
     event.preventDefault();
 
-    // 👇️ redirect to /contacts
     navigate('/contractor/dashboard');
   };
   
@@ -19,6 +18,7 @@ export default function Loginpage() {
           <input type="password" name="Password" placeholder="Password" className="input" required/><br />
           <button className="btn" type="submit">Submit</button>
         </form>
+        <Link to={'/register'} className='link' style={{margin: 0}}>Register</Link>
     </div>
   )
 }

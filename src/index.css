@@ -107,9 +107,10 @@ code {
 }
 .login {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 .form {
   position: relative;
@@ -117,7 +118,7 @@ code {
   background: #FFFFFF;
   width: 40%;
   height: auto;
-  margin: 50px auto;
+  margin: 50px auto 20px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -300,4 +301,30 @@ code {
 }
 .yellow-hover:hover {
   color: var(--yellow);
+}
+.projects {
+  margin: 0 50px;
+}
+.projects h1{
+  margin-bottom: 0;
+}
+.project-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.add-event-button {
+  width: auto;
+  height: 40px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+}
+.add-event-button:hover {
+  background-color: var(--yellow);
+  cursor: pointer;
 }
