@@ -328,3 +328,49 @@ code {
   background-color: var(--yellow);
   cursor: pointer;
 }
+.regulator {
+  display: grid;
+  grid-template-columns: 20% auto;
+  margin: 0;
+  height: 80vh;
+}
+.regulator-sidebar {
+  /* position:fixed; */
+  position: relative;
+  left:0;
+  height:80vh;
+  bottom:0;
+  background: #111;
+  padding:20px;
+  z-index:9;
+  color:#fff;
+  transition:0.3s ease;
+  /* overflow-y: scroll; */
+}
+.regulator-sidebar h3 {
+  text-decoration: none; 
+  color: var(--smoke); 
+  display: block; 
+  font-weight: 600; 
+  font-size: 34px; 
+  font-family: 'Poppins', sans-serif;
+}
+.regulator-sidebar a {
+  display:block;
+  padding:10px;
+  color:#fff;
+  text-decoration:none;
+  border-bottom:1px solid #555;
+  /* background-color: var(--yellow); */
+  border-radius: 5px;
+  cursor: pointer;
+}
+.regulator-sidebar a:hover {
+  background-color: var(--yellow);
+}
+.regulator-main {
+  height: 85vh;
+  overflow-y: scroll;
+  margin: 0;
+  bottom: 0;
+}

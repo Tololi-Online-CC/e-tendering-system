@@ -13,6 +13,12 @@ import Bid from "./pages/dynamic-pages/Bid";
 import Review from "./pages/dynamic-pages/Review";
 import BidDetail from "./pages/contractor-pages/BidDetail";
 import Registrationpage from "./pages/Registrationpage";
+import Regulatorpage from "./pages/Regulatorpage";
+import Users from "./pages/regulator-pages/Users";
+import RegulatorBids from "./pages/regulator-pages/Bids";
+import RegulatorProposals from "./pages/regulator-pages/Proposals";
+import Adminregistration from "./pages/Adminregistration";
+
 
 function App() {
   return (
@@ -21,7 +27,8 @@ function App() {
         <Siteheader />
         <Routes>
           <Route exact path ="/" element={<Loginpage />} />
-          <Route path ="register" element={<Registrationpage />} />
+          <Route path ="/register" element={<Registrationpage />} />
+          <Route path ="/admin" element={<Adminregistration />} />
           <Route path="/contractor" element={<Contractorpage />} />
           <Route path="/contractor/dashboard" element={<Dashboard />} />
           <Route path="/contractor/bids_list" element={<BidsList />}/>
@@ -33,6 +40,10 @@ function App() {
           <Route path="/category/:id" element={<Category />} />
           <Route path="/review/:id" element={<Review />} />
           <Route path="/bid_detail/:id" element={<BidDetail />} />
+          <Route path="/regulator" element={<Regulatorpage />} />
+          <Route path="/regulator/users" element={<Users />} />
+          <Route path="/regulator/bids" element={<RegulatorBids />} />
+          <Route path="/regulator/proposals" element={<RegulatorProposals />} />
         </Routes>
       </div>
     </Router>
