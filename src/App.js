@@ -17,7 +17,9 @@ import Regulatorpage from "./pages/Regulatorpage";
 import Users from "./pages/regulator-pages/Users";
 import RegulatorBids from "./pages/regulator-pages/Bids";
 import RegulatorProposals from "./pages/regulator-pages/Proposals";
-import Adminregistration from "./pages/Adminregistration";
+import Adminregistration from "./pages/AdminLogin";
+import Rewards from "./pages/regulator-pages/Rewards";
+import Analytics from "./pages/regulator-pages/Analytics";
 
 
 function App() {
@@ -44,6 +46,8 @@ function App() {
           <Route path="/regulator/users" element={<Users />} />
           <Route path="/regulator/bids" element={<RegulatorBids />} />
           <Route path="/regulator/proposals" element={<RegulatorProposals />} />
+          <Route path="/regulator/rewards" element={<Rewards />} />
+          <Route path="/regulator/analytics" element={<Analytics />} />
         </Routes>
       </div>
     </Router>

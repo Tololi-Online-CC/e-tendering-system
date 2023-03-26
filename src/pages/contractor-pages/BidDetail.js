@@ -4,7 +4,6 @@ import Secondhead from '../../components/Secondhead'
 import useFetch from '../../hooks/useFetch'
 import Swal from 'sweetalert2'
 import axios from 'axios'
-import { display } from '@mui/system'
 
 export default function BidDetail() {
   const navigate = useNavigate();

@@ -330,22 +330,25 @@ code {
 }
 .regulator {
   display: grid;
-  grid-template-columns: 20% auto;
+  grid-template-columns: 17% auto;
   margin: 0;
   height: 80vh;
 }
 .regulator-sidebar {
-  /* position:fixed; */
   position: relative;
   left:0;
   height:80vh;
   bottom:0;
   background: #111;
+  /* background-color: #D3D3D3; */
   padding:20px;
   z-index:9;
   color:#fff;
   transition:0.3s ease;
-  /* overflow-y: scroll; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 .regulator-sidebar h3 {
   text-decoration: none; 
@@ -366,11 +369,73 @@ code {
   cursor: pointer;
 }
 .regulator-sidebar a:hover {
-  background-color: var(--yellow);
+  /* background-color: var(--yellow); */
+  border-bottom: 1px solid var(--yellow);
+}
+.regulator-sidebar button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: var(--yellow);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: var(--black);
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
 }
 .regulator-main {
   height: 85vh;
   overflow-y: scroll;
   margin: 0;
   bottom: 0;
+}
+.h2-padding {
+  padding-left: 20px;
+}
+.action-btn-review {
+  color: var(--black);
+  /* background-color: #FFD580; */
+  background-color: var(--yellow);
+  margin: 0 2px;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 25px;
+}
+.action-btn-approve {
+  color: var(--white);
+  background-color: #90EE90;
+  margin: 0 2px;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 25px;
+}
+.action-btn-reject {
+  color: var(--white);
+  background-color: #ff6961;
+  margin: 0 2px;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 25px;
+}
+.action-btn-view {
+  color: var(--black);
+  background-color: #90EE90;
+  margin: 0 2px;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 25px;
+}
+.bid-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 25px 0 0;
 }
