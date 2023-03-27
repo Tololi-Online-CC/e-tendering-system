@@ -3,7 +3,7 @@ import Sidebar from "../../components/Sidebar";
 import { RegulatorDataGridAll, RegulatorDataGridPending, RegulatorDataGridRejected, RegulatorDataGridAwarded, RegulatorDataGridApproved } from '../../components/BidDataGridRegulator'
 import { useState } from "react";
 
-export default function RegulatorProposals() {
+export default function RegulatorContracts() {
     const [selectedComponent, setSelectedComponent] = useState("");
 
     const handleSelection = (component) => {
@@ -13,8 +13,10 @@ export default function RegulatorProposals() {
         return (
             <div style={{ paddingLeft: "20px" }}>
                 <a className="filter-a" onClick={() => handleSelection("Pending")}>Pending</a>
+                <a className="filter-a" onClick={() => handleSelection("Approved")}>Approved</a>
                 <a className="filter-a" onClick={() => handleSelection("Rejected")}>Rejected</a>
-                <a className="filter-a" onClick={() => handleSelection("Awarded")}>Awarded</a>
+                {/* <a className="filter-a" onClick={() => handleSelection("Awarded")}>Awarded</a> */}
+                <a className="filter-a" onClick={() => handleSelection("AllBids")}>All Bids</a>
             </div>
         );
     }
@@ -24,9 +26,20 @@ export default function RegulatorProposals() {
                 <div className="regulator">
                     <Sidebar />
                     <div className="regulator-main">
-                        <h2 className='h2-padding'>Awards Pending Approval</h2>
+                        <h2 className='h2-padding'>Bids Pending Approval</h2>
                         <NavigateContracts />
                         <RegulatorDataGridPending />
+                    </div>
+                </div>
+            );
+        case "Approved":
+            return (
+                <div className="regulator">
+                    <Sidebar />
+                    <div className="regulator-main">
+                        <h2 className='h2-padding'>Bids Approved</h2>
+                        <NavigateContracts />
+                        <RegulatorDataGridApproved />
                     </div>
                 </div>
             );
@@ -35,20 +48,34 @@ export default function RegulatorProposals() {
                 <div className="regulator">
                     <Sidebar />
                     <div className="regulator-main">
-                        <h2 className='h2-padding'>Awards Rejected</h2>
+                        <h2 className='h2-padding'>Bids Rejected</h2>
                         <NavigateContracts />
                         <RegulatorDataGridRejected />
                     </div>
                 </div>
             );
-        case "Awarded":
+        // case "Awarded":
+        //     return (
+        //         <div className="regulator">
+        //             <Sidebar />
+        //             <div className="regulator-main">
+        //                 <h2 className='h2-padding'>Bids Awarded</h2>
+        //                 <NavigateContracts />
+        //                 <RegulatorDataGridAwarded />
+        //             </div>
+        //         </div>
+        //     );
+        case "AllBids":
             return (
                 <div className="regulator">
                     <Sidebar />
                     <div className="regulator-main">
-                        <h2 className='h2-padding'>Awarded</h2>
+                        <div className="bid-header">
+                            <h2 className='h2-padding'>All Bids</h2>
+                            <button className='add-event-button' onClick={[]}>Add New Bid</button>
+                        </div>
                         <NavigateContracts />
-                        <RegulatorDataGridAwarded />
+                        <RegulatorDataGridAll />
                     </div>
                 </div>
             );
@@ -57,7 +84,7 @@ export default function RegulatorProposals() {
                 <div className="regulator">
                     <Sidebar />
                     <div className="regulator-main">
-                        <h2 className='h2-padding'>Awards Pending Approval</h2>
+                        <h2 className='h2-padding'>Bids Pending Approval</h2>
                         <NavigateContracts />
                         <RegulatorDataGridPending />
                     </div>

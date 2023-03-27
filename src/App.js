@@ -20,6 +20,7 @@ import RegulatorProposals from "./pages/regulator-pages/Proposals";
 import Adminregistration from "./pages/AdminLogin";
 import Rewards from "./pages/regulator-pages/Rewards";
 import Analytics from "./pages/regulator-pages/Analytics";
+import RegulatorContracts from "./pages/regulator-pages/Contracts";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Route path="/regulator/proposals" element={<RegulatorProposals />} />
           <Route path="/regulator/rewards" element={<Rewards />} />
           <Route path="/regulator/analytics" element={<Analytics />} />
+          <Route path="/regulator/contracts" element={<RegulatorContracts />} />
         </Routes>
       </div>
     </Router>

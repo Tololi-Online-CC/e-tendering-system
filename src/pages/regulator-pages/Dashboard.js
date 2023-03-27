@@ -24,12 +24,30 @@ export default function Dashboard() {
           </div>
           <div className='card'>
             <h2><ion-icon name="hourglass-outline" style={{color: "#ffc90a"}}></ion-icon>1.7K</h2>
-            <span>Rewards Pending Approval</span>
+            <span>Awards Pending Approval</span>
           </div>
           <div className='card'>
             <h2><ion-icon name="person-outline" style={{color: "#ffc90a"}}></ion-icon>234</h2>
             <span>New Users</span>
           </div>
+        </div>
+        <div className='announcements'>
+          <h2 style={{marginTop: "40px"}}>Notifications</h2>
+          <div className='announcements-card'>
+            <h3>Scheduled Maintenance</h3>
+            <p>Read this article to find out how to easily browse through bids and find ones that are perfect for you</p>
+            <a href='#r' className='yellow-hover'>View more</a>
+          </div>
+          <div className='announcements-card'>
+            <h3>New Features Now Available!</h3>
+            <p>Read this article to find out how to easily browse through bids and find ones that are perfect for you</p>
+            <a href='#r' className='yellow-hover'>View more</a>
+          </div>
+          <div className='announcements-card'>
+            <h3>New Features Now Available!</h3>
+            <p>Read this article to find out how to easily browse through bids and find ones that are perfect for you</p>
+            <a href='#r' className='yellow-hover'>View more</a>
+          </div><br />
         </div>
         <div className='all-bids'>
           <div className='all-bids-header'>
@@ -79,7 +97,7 @@ export default function Dashboard() {
         </div>
         <div className='all-bids'>
           <div className='all-bids-header'>
-            <h2>Rewarded Contracts</h2>
+            <h2>Awarded Contracts</h2>
             <Link to={"/contractor/bids_list"} style={{ textDecoration: 'none' }}><span>See all rewarded <ion-icon name="arrow-forward-outline"></ion-icon></span></Link>
           </div>
           <div className='dashboard-bid-card'>
@@ -168,24 +186,6 @@ export default function Dashboard() {
             <span>{bid_details[4].attributes.due_date}</span>
             <Link to='/bid_detail/6' style={{ textDecoration: 'none'}}><span className='yellow-hover'>View details</span></Link>
           </div>
-        </div>
-        <div className='announcements'>
-          <h2 style={{marginTop: "40px"}}>Notifications</h2>
-          <div className='announcements-card'>
-            <h3>Scheduled Maintenance</h3>
-            <p>Read this article to find out how to easily browse through bids and find ones that are perfect for you</p>
-            <a href='#r' className='yellow-hover'>View more</a>
-          </div>
-          <div className='announcements-card'>
-            <h3>New Features Now Available!</h3>
-            <p>Read this article to find out how to easily browse through bids and find ones that are perfect for you</p>
-            <a href='#r' className='yellow-hover'>View more</a>
-          </div>
-          <div className='announcements-card'>
-            <h3>New Features Now Available!</h3>
-            <p>Read this article to find out how to easily browse through bids and find ones that are perfect for you</p>
-            <a href='#r' className='yellow-hover'>View more</a>
-          </div><br />
         </div>
       </div>
   )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { RegulatorDataGridAll } from '../../components/BidDataGridRegulator'
+import { RegulatorDataGridUsers } from '../../components/BidDataGridRegulator'
 import Sidebar from '../../components/Sidebar'
 
 export default function Users() {
@@ -9,9 +9,9 @@ export default function Users() {
       <div className='regulator-main'>
         <div className="bid-header" style={{marginTop: 0}}>
           <h2 className='h2-padding'>All Users</h2>
-          <button className='add-event-button' onClick={[]}>Add New User</button>
+          {/* <button className='add-event-button' onClick={[]}>Add New User</button> */}
         </div>
-        <RegulatorDataGridAll />
+        <RegulatorDataGridUsers />
       </div>
       
     </div>

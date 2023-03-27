@@ -439,3 +439,8 @@ code {
   justify-content: space-between;
   margin: 10px 25px 0 0;
 }
+.filter-a {
+  padding: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}

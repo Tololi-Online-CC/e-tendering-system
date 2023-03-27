@@ -22,7 +22,8 @@ const data = [
 
 const data2 = [
   { name: 'Pending', sales: 1398 },
-  { name: 'Approved', sales: 9800 },
+  { name: 'Approved', sales: 4800 },
+  { name: 'Awarded', sales: 4800 },
   { name: 'Rejected', sales: 3908 },
 ];
 
