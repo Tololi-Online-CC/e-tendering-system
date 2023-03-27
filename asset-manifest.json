@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/e-tendering-system/static/css/main.2c5c7917.css",
+    "main.js": "/e-tendering-system/static/js/main.96db4a54.js",
+    "static/media/logo.png": "/e-tendering-system/static/media/logo.56dfb805eebe55ce2612.png",
+    "index.html": "/e-tendering-system/index.html",
+    "main.2c5c7917.css.map": "/e-tendering-system/static/css/main.2c5c7917.css.map",
+    "main.96db4a54.js.map": "/e-tendering-system/static/js/main.96db4a54.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c5c7917.css",
+    "static/js/main.96db4a54.js"
+  ]
+}
