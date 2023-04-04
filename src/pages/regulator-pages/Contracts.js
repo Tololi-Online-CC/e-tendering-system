@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../../components/Sidebar";
-import { RegulatorDataGridAll, RegulatorDataGridPending, RegulatorDataGridRejected, RegulatorDataGridAwarded, RegulatorDataGridApproved } from '../../components/BidDataGridRegulator'
+import { RegulatorDataGridAll, RegulatorDataGridPending, RegulatorDataGridRejected, RegulatorDataGridApproved } from '../../components/BidDataGridRegulator'
 import { useState } from "react";
 
 export default function RegulatorContracts() {
@@ -12,11 +12,10 @@ export default function RegulatorContracts() {
     function NavigateContracts() {
         return (
             <div style={{ paddingLeft: "20px" }}>
-                <a className="filter-a" onClick={() => handleSelection("Pending")}>Pending</a>
-                <a className="filter-a" onClick={() => handleSelection("Approved")}>Approved</a>
-                <a className="filter-a" onClick={() => handleSelection("Rejected")}>Rejected</a>
-                {/* <a className="filter-a" onClick={() => handleSelection("Awarded")}>Awarded</a> */}
-                <a className="filter-a" onClick={() => handleSelection("AllBids")}>All Bids</a>
+                <span className="filter-a" onClick={() => handleSelection("Pending")}>Pending</span>
+                <span className="filter-a" onClick={() => handleSelection("Approved")}>Approved</span>
+                <span className="filter-a" onClick={() => handleSelection("Rejected")}>Rejected</span>
+                <span className="filter-a" onClick={() => handleSelection("AllBids")}>All RFQs</span>
             </div>
         );
     }
@@ -26,7 +25,7 @@ export default function RegulatorContracts() {
                 <div className="regulator">
                     <Sidebar />
                     <div className="regulator-main">
-                        <h2 className='h2-padding'>Bids Pending Approval</h2>
+                        <h2 className='h2-padding'>RFQs Pending Approval</h2>
                         <NavigateContracts />
                         <RegulatorDataGridPending />
                     </div>
@@ -37,7 +36,7 @@ export default function RegulatorContracts() {
                 <div className="regulator">
                     <Sidebar />
                     <div className="regulator-main">
-                        <h2 className='h2-padding'>Bids Approved</h2>
+                        <h2 className='h2-padding'>RFQs Approved</h2>
                         <NavigateContracts />
                         <RegulatorDataGridApproved />
                     </div>
@@ -48,31 +47,20 @@ export default function RegulatorContracts() {
                 <div className="regulator">
                     <Sidebar />
                     <div className="regulator-main">
-                        <h2 className='h2-padding'>Bids Rejected</h2>
+                        <h2 className='h2-padding'>RFQs Rejected</h2>
                         <NavigateContracts />
                         <RegulatorDataGridRejected />
                     </div>
                 </div>
             );
-        // case "Awarded":
-        //     return (
-        //         <div className="regulator">
-        //             <Sidebar />
-        //             <div className="regulator-main">
-        //                 <h2 className='h2-padding'>Bids Awarded</h2>
-        //                 <NavigateContracts />
-        //                 <RegulatorDataGridAwarded />
-        //             </div>
-        //         </div>
-        //     );
         case "AllBids":
             return (
                 <div className="regulator">
                     <Sidebar />
                     <div className="regulator-main">
                         <div className="bid-header">
-                            <h2 className='h2-padding'>All Bids</h2>
-                            <button className='add-event-button' onClick={[]}>Add New Bid</button>
+                            <h2 className='h2-padding'>All RFQs</h2>
+                            <button className='add-event-button' onClick={[]}>Add New RFQ</button>
                         </div>
                         <NavigateContracts />
                         <RegulatorDataGridAll />
@@ -84,7 +72,7 @@ export default function RegulatorContracts() {
                 <div className="regulator">
                     <Sidebar />
                     <div className="regulator-main">
-                        <h2 className='h2-padding'>Bids Pending Approval</h2>
+                        <h2 className='h2-padding'>RFQs Pending Approval</h2>
                         <NavigateContracts />
                         <RegulatorDataGridPending />
                     </div>

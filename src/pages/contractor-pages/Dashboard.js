@@ -18,7 +18,7 @@ export default function Dashboard() {
         <div className='analytics'>
           <div className='card'>
             <h2><ion-icon name="archive-outline" style={{color: "#ffc90a"}}></ion-icon> {data.data.length}</h2>
-            <span>Bids applied for</span>
+            <span>RFQs applied for</span>
           </div>
           <div className='card'>
             <h2><ion-icon name="time-outline" style={{color: "#ffc90a"}}></ion-icon> 1</h2>
@@ -35,8 +35,8 @@ export default function Dashboard() {
         </div>
         <div className='all-bids'>
           <div className='all-bids-header'>
-            <h2>Bids</h2>
-            <Link to={"/contractor/bids_list"} style={{ textDecoration: 'none' }}><span>See all bids <ion-icon name="arrow-forward-outline"></ion-icon></span></Link>
+            <h2>RFQs</h2>
+            <Link to={"/contractor/bids_list"} style={{ textDecoration: 'none' }}><span>See all RFQs <ion-icon name="arrow-forward-outline"></ion-icon></span></Link>
           </div>
           <div className='dashboard-bid-card'>
             <span>{bid_details[0].id}</span>

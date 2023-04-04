@@ -105,7 +105,7 @@ export default function Projectpage() {
     <div>
       <Secondhead />
       <div className="projects">
-        <h1>Projects</h1>
+        {/* <h1>Projects</h1> */}
         <div className="project-header">
           <h2>Project Calender</h2>
           <button className='add-event-button' onClick={callAlert}>Add Event</button>

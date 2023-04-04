@@ -3,7 +3,6 @@ import Contractorpage from "./pages/Contractorpage";
 import Siteheader from "./components/Siteheader";
 import Loginpage from "./pages/Loginpage";
 import Dashboard from './pages/contractor-pages/Dashboard'
-import Contracts from './pages/contractor-pages/Contracts'
 import Finance from './pages/contractor-pages/Finance'
 import Projects from './pages/contractor-pages/Projects'
 import StatusList from './pages/contractor-pages/StatusList'
@@ -35,7 +34,6 @@ function App() {
           <Route path="/contractor" element={<Contractorpage />} />
           <Route path="/contractor/dashboard" element={<Dashboard />} />
           <Route path="/contractor/bids_list" element={<BidsList />}/>
-          <Route path="/contractor/contracts" element={<Contracts />} />
           <Route path="/contractor/projects" element={<Projects />} />
           <Route path="/contractor/finace" element={<Finance />} />
           <Route path="/contractor/status_list" element={<StatusList />} />

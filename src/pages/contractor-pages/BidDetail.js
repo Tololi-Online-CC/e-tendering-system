@@ -75,9 +75,10 @@ export default function BidDetail() {
       <span className="link" onClick={goBack}><ion-icon name="arrow-back-outline"></ion-icon> Back</span>
       <div className="bid-request-card">
         <h2>{data.data.attributes.Company}: {data.data.attributes.request_title}</h2>
-        <p><b>Category: </b>{data.data.attributes.Category}  </p>
-        <p><b>Due Date: </b>{data.data.attributes.due_date} </p><br/>
-        <h3>Bid Description</h3>
+        <p><b>ID: </b>{data.data.id}</p>
+        <p><b>Category: </b>{data.data.attributes.Category}</p>
+        <p><b>Due Date: </b>{data.data.attributes.due_date}</p><br/>
+        <h3>RFQ Description</h3>
         <p>{data.data.attributes.request_description}</p>
         <h3>Insturctions to Bidder</h3>
         <ol>
